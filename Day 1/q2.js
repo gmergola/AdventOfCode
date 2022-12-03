@@ -4,8 +4,6 @@ const data = fs.readFileSync("data.txt", {encoding: "utf-8"})
     .split("\n")
     .map((x) => `${x}` === "" ? null : parseInt(x))
 
-// const data = [1, null, 2, 3, 4, null, 6, 1, null, 3, null, 6]
-
 function getAllCalories() {
     const calories = []
     let calorieCount = 0
@@ -27,4 +25,4 @@ function qTwo() {
     return calories[calories.length - 1] + calories[calories.length - 2] + calories[calories.length - 3]
 }
 
-console.log(qTwo())
+console.log(qTwo()) // 200158
